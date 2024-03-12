@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}Calculator Home{% endblock title %}
+{% block content %}
+<div class="container-sm text-center">
+    <div class="row align-items-center">
+        <form class="col" action="" method="post">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    {{form.life_form_type }}
+                </div>
+                <div class="col">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                {{form.commander}}
+                                {{form.commander.label}}
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <div class="form-check form-check-inline">
+                                    {{form.engineer}}
+                                    {{form.engineer.label}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="input-group">
+                        {{form.planets }}
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="input-group">
+                        {{form.life_form_level }}
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        {{form.fusion }}
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        {{form.energy }}
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-2">
+                    {{form.steps}}
+                </div>
+                <div class="col-1">
+                    <button type="submit" class="btn btn-secondary">Calculate</button>
+
+                </div>
+
+            </div>
+        </form>
+        <div class="col overflow-auto" style="max-height: 200px;">
+            <ol class="list-group list-group-numbered">
+                {% if results %}
+                {% for result in results %}
+                <li class="list-group-item">
+
+                    {{ result }}
+
+                </li>
+                {% endfor %}
+                {% endif %}
+            </ol>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

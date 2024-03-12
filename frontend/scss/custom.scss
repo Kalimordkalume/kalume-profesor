@@ -1,0 +1,26 @@
+// Color mode variables in _root.scss
+
+
+$white: #ffffffe0;
+
+$theme-colors: (
+    "light": #6552bd,
+    "dark": #3e149e,
+    "primary": #54437e,
+    "secondary": #006c9f,
+    "info": #38abe1,
+    "accent1": #5c2ed2,
+    "accent2": #f4469e,
+    "accent3": #e8226f,
+    "success": #00b556,
+    "warning": #efcc00,
+    "danger": #fc0029,
+);
+
+$body-color-dark: $white;
+$body-bg-dark: map-get($map: $theme-colors, $key: "dark");
+$body-secondary-color-dark: $white;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

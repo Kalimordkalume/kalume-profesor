@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Kalume <abrahammoracejas@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = 'calculator' },
+    { include = 'pages' },
+    { include = 'mysite' },
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.3"
+django-debug-toolbar = "^4.3.0"
+djangorestframework = "^3.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
