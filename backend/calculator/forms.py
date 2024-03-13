@@ -6,15 +6,14 @@ class CreateEnergyForm(forms.Form):
         max_value=100,
         min_value=0,
         required=True,
-        initial=1,
         label='Number of planets',
         widget=forms.NumberInput(attrs={'class':'form-control', 'placeholder':'Planet Count'})
+        
     )
     fusion = forms.IntegerField(
         max_value=100,
         min_value=0,
         required=True,
-        initial=0,
         label='Fusion Level',
         widget=forms.NumberInput(attrs={'class':'form-control', 'placeholder':'Fusion Level'})
     )
@@ -22,25 +21,24 @@ class CreateEnergyForm(forms.Form):
         max_value=100,
         min_value=0,
         required=True,
-        initial=0,
         label='Energy Level',
         widget=forms.NumberInput(attrs={'class':'form-control', 'placeholder':'Energy Level'})
     )
     commander = forms.BooleanField(
         required=False,
-        widget=forms.CheckboxInput(attrs={'class': 'form-check-input'}),
+        widget=forms.CheckboxInput(attrs={'class':'form-check-input'}),
+        label='Commander'
     )
 
     engineer = forms.BooleanField(
         required=False,
-        widget=forms.CheckboxInput(attrs={'class': 'form-check-input'}),
+        widget=forms.CheckboxInput(attrs={'class':'form-check-input'}),
+        label='Engineer',
     )
     life_form_type = forms.ChoiceField(
         choices={'0': 'Choose your life-form','1':'Humans','2':'Rocktal','3':'Kaelesh','4':'Mechas'},
         required=False,
-        initial='0',
         label='Choose your life-form',
-        label_suffix=':',
         widget=forms.Select(attrs={'class': 'form-select'}),
         
 
@@ -50,7 +48,6 @@ class CreateEnergyForm(forms.Form):
         min_value=0,
         required=False,
         label='Life Form Level',
-        initial='Life Form Level',
         widget=forms.NumberInput(attrs={'class':'form-control', 'placeholder': 'Life Form Level'})
     )
     steps = forms.IntegerField(
@@ -58,6 +55,5 @@ class CreateEnergyForm(forms.Form):
         min_value=1,
         required=True,
         label='Desired Steps',
-        initial='Desired Steps',
         widget=forms.NumberInput(attrs={'class':'form-control', 'placeholder':'Desired Steps'})
     )

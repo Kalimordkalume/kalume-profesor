@@ -1,0 +1,31 @@
+{% for field in form %}
+        {% if field.field.widget.input_type == 'select' %}
+        <div class="form-floating mb-3 wrapper-select">
+        {{ field.errors }}
+        {{ field }}
+        {{field.label_tag}}
+        </div>
+        {% elif field.field.widget.input_type == 'checkbox' %}
+
+
+            <div class="col">
+                <div class="form-check form-check-inline mb-3 wrapper-check">
+                    <label class="form-check-label" for="{{field.id_for_label}}">
+                        {{field.label}}
+                    </label>
+                        {{field.errors}}
+                        {{field}}
+                </div>
+            </div>
+        {% else %}
+        <div class="form-floating mb-3 wrapper-number">
+        {{ field.errors }}
+        {{ field }}
+        <label for="{{field.id_for_label}}">
+        {{field.label}}
+        </label>
+        </div>
+        {% endif %}
+{% endfor %}
+
+
