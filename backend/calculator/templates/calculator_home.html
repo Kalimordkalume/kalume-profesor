@@ -32,36 +32,51 @@
             </div>
             <div class="row" id="steps-row">
                 <div class="col" id="form-wrapper-steps">
-
+                    <div class="form-floating" id="form-field-wrapper">
+                        {{form.steps}}
+                        {{form.steps.label_tag}}
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col" id="rigt-side">
             <div class="row" id="race-row">
                 <div class="col" id="form-wrapper-race">
-
+                    <div class="form-floating">
+                        {{form.life_form_type}}
+                        {{form.life_form_type.label_tag}}
+                    </div>
                 </div>
             </div>
             <div class="row" id="race-level-row-racelvl">
-                <div class="col" id="form-wrapper">
-
+                <div class="col" id="form-wrapper-racelvl">
+                    <div class="form-floating" id="form-field-wrapper">
+                        {{form.life_form_level}}
+                        {{form.life_form_level.label_tag}}
+                    </div>
                 </div>
             </div>
             <div class="row" id="checkboxes-row">
-                <div class="col" id="form-wrapper-checkboxes">
-
+                <div class="col checkboxes-wrapper">
+                    <div class="form-check form-check-inline commander-wrapper">
+                        {{form.commander}}
+                        <label class="form-check-label"
+                            for="{{form.commander.id_for_label}}">{{form.commander.label}}</label>
+                    </div>
+                    <div class="form-check form-check-inline engineer-wrapper">
+                        {{form.engineer}}
+                        <label class="form-check-label"
+                            for="{{form.engineer.id_for_label}}">{{form.engineer.label}}</label>
+                    </div>
                 </div>
             </div>
             <div class="row" id="calculate-row">
                 <div class="col" id="form-wrapper-button">
-                    <button type="submit" value="Calcular"></button>
+                    <button class="btn btn-primary" type="submit" value="Calcular">Calcular</button>
                 </div>
             </div>
-        </div>
     </form>
-
     <div class="row" id="results-container">
-
     </div>
 </div>
 {% endblock content %}
