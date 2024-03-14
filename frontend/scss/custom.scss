@@ -18,9 +18,38 @@ $theme-colors: (
 $body-color-dark: $white;
 $body-bg-dark: map-get($map: $theme-colors, $key: "dark");
 $body-secondary-color-dark: $white;
-
-
-
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+main {
+    height: 720px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.block {
+    max-height: 200px;
+}
+
+
+
+
+
+.block-page {
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
 
 // sass --watch ./scss/custom.scss ../backend/static/css/custom.css

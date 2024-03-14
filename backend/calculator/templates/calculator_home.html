@@ -3,8 +3,8 @@
 
 
 {% block content %}
-<form class="container" id="settings-container" method="post" action="">
-    <div class="row" id="planets-row">
+<form class="container text-center mt-4" id="settings-container" method="post" action="">
+    <div class="row row-cols-4 mb-3 justify-content-center align-items-center" id="planets-row">
         <div class="col" id="form-wrapper-planets">
             <div class="form-floating" id="form-field-wrapper">
                 {{form.planets}}
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="row" id="energy-row">
+    <div class="row row-cols-4 mb-3 justify-content-center align-items-center" id="energy-row">
         <div class="col" id="form-wrapper-energy">
             <div class="form-floating" id="form-field-wrapper">
                 {{form.energy}}
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="row" id="fusion-row">
+    <div class="row row-cols-4 mb-3 justify-content-center align-items-center" id="fusion-row">
         <div class="col" id="form-wrapper-fusion">
             <div class="form-floating" id="form-field-wrapper">
                 {{form.fusion}}
@@ -50,8 +50,8 @@
             </div>
         </div>
     </div>
-    <div class="row" id="steps-row">
-        <div class="col" id="form-wrapper-steps">
+    <div class="row row-cols-4 mb-3 justify-content-center align-items-center" id="steps-row">
+        <div class="col " id="form-wrapper-steps">
             <div class="form-floating" id="form-field-wrapper">
                 {{form.steps}}
                 {{form.steps.label_tag}}
@@ -60,6 +60,17 @@
         <div class="col" id="form-wrapper-button">
             <button class="btn btn-primary" type="submit" value="Calcular">Calcular</button>
         </div>
+    </div>
 </form>
+<div class="container text-center mt-5">
+    <div class="row row-cols-3 justify-content-center align-items-center">
+        <div class="col">
+            <ol class="list-group list-group-numbered overflow-auto block">
+                {% for item in results %}
+                <li class=" list-group-item">{{item}}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
 </div>
 {% endblock content %}
