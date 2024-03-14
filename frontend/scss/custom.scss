@@ -3,7 +3,7 @@ $white: #ffffffe0;
 
 $theme-colors: (
     "light": #6552bd,
-    "dark": #9080b4,
+    "dark": #140735,
     "primary": #54437e,
     "secondary": #006c9f,
     "info": #38abe1,
@@ -22,3 +22,5 @@ $body-secondary-color-dark: $white;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+// sass --watch ./scss/custom.scss ../backend/static/css/custom.css
