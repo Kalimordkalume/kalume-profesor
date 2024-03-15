@@ -9,4 +9,4 @@ DEBUG = False
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["kalume-prod-77e41997d3fa.herokuapp.com"]
