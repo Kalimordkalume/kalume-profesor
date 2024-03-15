@@ -5,7 +5,7 @@ from .common import *
 DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-85=&3&2q-gl164gy^lw8w9bcg5zz251n6#@1os7+^cx)zd+&44"
+SECRET_KEY = "v5i(*%o-(-p-bqb2t1b2f&@+1=0y#im8^#+az&c@vj#qfkv0=#"
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
