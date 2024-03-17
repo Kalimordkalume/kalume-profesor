@@ -4,8 +4,7 @@ services:
     name: tildeblog
     runtime: python
     buildCommand: "./render-build.sh"
-    # startCommand: "cd django_site && python -m gunicorn backend.django_root.asgi:application -k uvicorn.workers.UvicornWorker"
-    startCommand: "cd backend/mysite && python -m gunicorn asgi:application -k uvicorn.workers.UvicornWorker"
+    startCommand: "cd backend && python -m gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: mysite.settings.prod
