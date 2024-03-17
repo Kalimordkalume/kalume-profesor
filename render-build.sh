@@ -17,3 +17,4 @@ python manage.py collectstatic --no-input
 if [[ "$CREATE_SUPERUSER" = "YES" ]] ; then
     python manage.py createsuperuser --no-input
 fi
+
