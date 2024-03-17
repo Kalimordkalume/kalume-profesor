@@ -10,7 +10,7 @@ pip install -r requirements.txt
 python manage.py collectstatic --no-input
 
 # Apply any outstanding database migrations
-python manage.py migrate
+# python manage.py migrate
 
 # to control this you set environment variable in render control panel
 
