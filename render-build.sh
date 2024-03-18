@@ -7,7 +7,7 @@ set -o errexit
 cd ./backend
 pip install poetry
 poetry install
-poetry env use python3.12
+poetry env use python3.12.2
 # Convert static asset files
 python manage.py collectstatic --no-input
 
