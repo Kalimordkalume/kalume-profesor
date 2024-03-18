@@ -4,10 +4,9 @@ set -o errexit
 
 # Modify this line as needed for your package manager (pip, poetry, etc.)
 
-cd ./backend
-pip install poetry
-poetry install
-poetry env use python3.12.2
+cd ./backend && pipx install poetry && poetry install && poetry env use python3.12.2
+
+
 # Convert static asset files
 python manage.py collectstatic --no-input
 
