@@ -4,7 +4,7 @@ set -o errexit
 
 # Modify this line as needed for your package manager (pip, poetry, etc.)
 
-cd ./backend && pipx install poetry && poetry install && poetry env use python3.12.2
+cd ./backend && pip install poetry && poetry install && poetry env use python3.12.2
 echo 'I executed properly by my own Kalume'
 
 # Convert static asset files
