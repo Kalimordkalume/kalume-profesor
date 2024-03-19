@@ -4,6 +4,7 @@
 
 {% block content %}
 <form class="container text-center mt-4" id="settings-container" method="post" action="">
+    {% csrf_token %}
     <div class="row row-cols-4 mb-3 justify-content-center align-items-center" id="planets-row">
         <div class="col" id="form-wrapper-planets">
             <div class="form-floating" id="form-field-wrapper">
