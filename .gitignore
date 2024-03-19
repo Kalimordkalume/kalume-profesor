@@ -90,5 +90,5 @@ db.sqlite3
 
 .venv
 
-frontend/*
+frontend/
 
