@@ -6,7 +6,7 @@ from .common import *
 DEBUG = True
 
 
-SECRET_KEY = "v5i(*%o-(-p-bqb2t1b2f&@+1=0y#im8^#+az&c@vj#qfkv0=#"
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 
 ALLOWED_HOSTS = ["*"]
