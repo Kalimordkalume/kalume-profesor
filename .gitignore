@@ -93,3 +93,5 @@ db.sqlite3
 frontend/
 
 local/
+
+backend/mysite/settings/dev.py
