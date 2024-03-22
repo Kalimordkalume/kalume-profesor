@@ -5,11 +5,11 @@ SECRET_KEY = "8_t#j6l#vo*!ia2p_nc+5*#t7ry-9b$h8m(lpv3rdkjsj*)i41"
 
 ALLOWED_HOSTS = ["*"]
 STATIC_URL = "frontend/"
-STATICFILES_DIRS = [STATIC_URL + "css/"]
+STATICFILES_DIRS = [BASE_DIR / STATIC_URL / "css/"]
 SECURE_SSL_REDIRECT = False
 CSRF_COOKIE_SECURE = False
 SESSION_COOKIE_SECURE = False
-STATIC_ROOT = BASE_DIR / "backend/mysite/static/"
+STATIC_ROOT = BASE_DIR / "static/"
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
