@@ -92,3 +92,4 @@ backend/mysite/settings/prod.py
 node_modules
 static
 .python-version
+backend/mysite/settings/__pycache__/dev.cpython-312.pyc
