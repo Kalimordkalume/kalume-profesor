@@ -9,7 +9,7 @@ STATICFILES_DIRS = [STATIC_URL + "css/"]
 SECURE_SSL_REDIRECT = False
 CSRF_COOKIE_SECURE = False
 SESSION_COOKIE_SECURE = False
-STATIC_ROOT = BASE_DIR / "backend/mysite/static/development_files/"
+STATIC_ROOT = BASE_DIR / "backend/mysite/static/"
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
