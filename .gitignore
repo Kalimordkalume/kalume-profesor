@@ -90,10 +90,12 @@ db.sqlite3
 
 .venv
 
-frontend/
-
 local/
 
 backend/mysite/settings/dev.py
 
 backend/mysite/settings/prod.py
+
+node_modules
+
+static

@@ -10,3 +10,5 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 
 
 ALLOWED_HOSTS = ["*"]
+
+STATIC_ROOT = BASE_DIR + "static/production-files"
