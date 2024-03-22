@@ -88,6 +88,6 @@ local_settings.py
 db.sqlite3
 .venv
 local/
-./backend/mysite/settings/prod.py
+backend/mysite/settings/prod.py
 node_modules
 static
