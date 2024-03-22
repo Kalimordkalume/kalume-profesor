@@ -1,17 +1,13 @@
 [tool.poetry]
-name = "backend"
+name = "kalume-profesor"
 version = "0.1.0"
 description = ""
 authors = ["Kalume <abrahammoracejas@gmail.com>"]
-readme = "README.md"
-packages = [
-    { include = 'calculator' },
-    { include = 'pages' },
-    { include = 'mysite' },
-]
+readme = "README.rst"
+packages = [{ include = "backend" }]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 django = "^5.0.3"
 djangorestframework = "^3.14.0"
 whitenoise = "^6.6.0"
