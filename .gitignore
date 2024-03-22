@@ -82,7 +82,7 @@ target/
 *.log
 *.pot
 *.pyc
-__pycache__/
+__pycache__/*
 local_settings.py
 
 .env
@@ -99,3 +99,5 @@ backend/mysite/settings/prod.py
 node_modules
 
 static
+backend/mysite/settings/__pycache__/dev.cpython-312.pyc
+backend/mysite/settings/__pycache__/common.cpython-312.pyc
