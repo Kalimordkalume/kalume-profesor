@@ -7,7 +7,7 @@ readme = "README.rst"
 packages = [{ include = "backend" }]
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 django = "^5.0.3"
 djangorestframework = "^3.14.0"
 whitenoise = "^6.6.0"

@@ -91,3 +91,4 @@ local/
 backend/mysite/settings/prod.py
 node_modules
 static
+.python-version
