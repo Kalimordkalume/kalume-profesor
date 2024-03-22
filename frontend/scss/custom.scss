@@ -1,14 +1,36 @@
-$white: #ffffff;
+$white: #ffffffe0;
 
 $theme-colors: (
-    "light":      #c7f4e8,
-    "dark":       #a6903d,
-    "primary":    #1afc13,
-    "secondary":  #4b5055,
-    "info":       #55b09f,
-    "success":    #2aa266,
-    "warning":    #dfcc2b,
-    "danger":     #ea2c16,
+    "light": #6e51f0,
+    "dark": #21036641,
+    "primary": #0b7fc2,
+    "secondary": #3d0881,
+    "info": #01618d,
+    "accent1": #23a89d,
+    "accent2": #f4469e,
+    "accent3": #e8226f,
+    "success": #00b556,
+    "warning": #efcc00,
+    "danger": #fc0029,
 );
 
+$body-color-dark: $white;
+$body-bg-dark: map-get($map: $theme-colors, $key: "dark");
+$body-secondary-color-dark: $white;
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+main {
+    height: 720px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.block {
+    max-height: 200px;
+}
+
+.block-page {
+    height: 100vh;
+}
