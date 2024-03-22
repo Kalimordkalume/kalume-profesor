@@ -10,6 +10,9 @@ SECURE_SSL_REDIRECT = False
 CSRF_COOKIE_SECURE = False
 SESSION_COOKIE_SECURE = False
 STATIC_ROOT = BASE_DIR / "backend/mysite/static/development_files/"
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",  # Motor de la base de datos (SQLite en este ejemplo)
