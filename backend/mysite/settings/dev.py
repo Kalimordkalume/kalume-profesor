@@ -1,6 +1,6 @@
 from .common import *
 
-DEBUG = True
+DEBUG = False
 SECRET_KEY = "8_t#j6l#vo*!ia2p_nc+5*#t7ry-9b$h8m(lpv3rdkjsj*)i41"
 
 ALLOWED_HOSTS = ["*"]
