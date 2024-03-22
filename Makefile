@@ -13,3 +13,10 @@ run-server:
 
 watch:
 	sass --watch frontend/scss/custom.scss frontend/css/custom.css
+
+check-deploy:
+	poetry run python backend/manage.py check --deploy
+
+
+run-production-server:
+	cd backend/ && gunicorn backend.mysite.wsgi:application

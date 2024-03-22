@@ -92,12 +92,9 @@ db.sqlite3
 
 local/
 
-backend/mysite/settings/dev.py
-
 backend/mysite/settings/prod.py
+
 
 node_modules
 
 static
-backend/mysite/settings/__pycache__/dev.cpython-312.pyc
-backend/mysite/settings/__pycache__/common.cpython-312.pyc
