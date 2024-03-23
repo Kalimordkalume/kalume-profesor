@@ -93,3 +93,4 @@ node_modules
 .python-version
 backend/mysite/settings/__pycache__/dev.cpython-312.pyc
 backend/mysite/settings/__pycache__/dev.cpython-312.pyc
+local_dev
